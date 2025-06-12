@@ -10,5 +10,18 @@
     <header class="header">
         <h1 class="header__welcome-text">Welcome to MiniOS System</h1>
     </header>
+
+    <main class="container">
+
+        <label for="app" class="container__title-menu">Selecciona una app:</label>
+            <select id="app" class="container container__menu" onchange="document.getElementById('container__preview-app').src = this.value;">
+            <option value="./apps/note.html">Notas</option>
+            <option value="./apps/homeworks.html">Tareas</option>
+            <option value="./apps/weather.html">Clima</option>
+            </select>
+
+            <iframe id="container__preview-app" src="./apps/note.html" frameborder="0"></iframe>
+
+    </main>
 </body>
 </html>
