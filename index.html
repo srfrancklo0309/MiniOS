@@ -12,16 +12,23 @@
     </header>
 
     <main class="container">
+        <div class="container__menu">
+            <label for="app" class="container__title-menu">Selecciona una app:</label>
+                <select id="app" class="container__select" onchange="document.getElementById('container__preview-app').src = this.value;">
+                <option value="./apps/note.html">Notas</option>
+                <option value="./apps/homeworks.html">Tareas</option>
+                <option value="./apps/weather.html">Clima</option>
+                </select>
+        </div>
+        
+        <div class="container__iframe">
+            <iframe class="container__preview-app" id="container__preview-app" src="./apps/homeworks.html" frameborder="0"></iframe>
+        </div>
 
-        <label for="app" class="container__title-menu">Selecciona una app:</label>
-            <select id="app" class="container container__menu" onchange="document.getElementById('container__preview-app').src = this.value;">
-            <option value="./apps/note.html">Notas</option>
-            <option value="./apps/homeworks.html">Tareas</option>
-            <option value="./apps/weather.html">Clima</option>
-            </select>
-
-            <iframe id="container__preview-app" src="./apps/note.html" frameborder="0"></iframe>
-
+        <footer class="footer">
+            <p>&copysr;This aplication was created by Ian Aguirre, Esteban Gonzales y Emmanuel Pérez.</p>
+        </footer>
+        
     </main>
 </body>
 </html>
