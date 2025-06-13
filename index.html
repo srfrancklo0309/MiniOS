@@ -15,6 +15,7 @@
         <div class="container__menu">
             <label for="app" class="container__title-menu">Selecciona una app:</label>
                 <select id="app" class="container__select" onchange="document.getElementById('container__preview-app').src = this.value;">
+                <option value="">--</option>
                 <option value="./apps/note.html">Notas</option>
                 <option value="./apps/homeworks.html">Tareas</option>
                 <option value="./apps/weather.html">Clima</option>
@@ -22,7 +23,7 @@
         </div>
         
         <div class="container__iframe">
-            <iframe class="container__preview-app" id="container__preview-app" src="./apps/homeworks.html" frameborder="0"></iframe>
+            <iframe class="container__preview-app" id="container__preview-app" src="" frameborder="0"></iframe>
         </div>
 
         <footer class="footer">
